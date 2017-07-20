@@ -1,20 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass:300');
-
+@import url("https://fonts.googleapis.com/css?family=Overpass:300");
 body {
   width: 100%;
   min-height: 100vh;
   margin: 0;
   background-color: black;
   font-family: 'Overpass';
-  color: white;
-}
+  color: white; }
 
 #navbar {
   top: 2em;
   position: relative;
-  margin: 0 2em;
-
-  ul {
+  margin: 0 2em; }
+  #navbar ul {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -22,37 +19,27 @@ body {
     text-decoration: none;
     list-style: none;
     padding: 0;
-    margin: 0;
-
-    li {
+    margin: 0; }
+    #navbar ul li {
       float: left;
-      text-align: center;
-    }
-  }
-
-  a {
+      text-align: center; }
+  #navbar a {
     text-transform: uppercase;
-    text-decoration: none;
-  }
-}
+    text-decoration: none; }
 
 .navbar-item {
-  width: 33.333%;
-}
+  width: 33.333%; }
 
 #navbar-logo {
-  position: absolute;
-}
+  position: absolute; }
 
 a {
-  color: white;
-
-  a:visited {
-    color: white;
-  }
-}
+  color: white; }
+  a a:visited {
+    color: white; }
 
 .background-image {
   width: 100vw;
-  height: auto;
-}
+  height: auto; }
+
+/*# sourceMappingURL=style.css.map */
