@@ -1,28 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass:300');
+@import url('https://fonts.googleapis.com/css?family=Overpass:200,700');
+
+$medium: 800px;
+$small: 600px;
 
 body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 125vh;
   margin: 0;
   background-color: black;
   font-family: 'Overpass';
   color: white;
+  font-size: 15px;
 }
 
 #navbar {
   top: 2em;
   position: relative;
-  margin: 0 2em;
+  margin: 0 3em;
 
   ul {
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
     width: 33%;
+    max-width: 350px;
     text-decoration: none;
     list-style: none;
     padding: 0;
     margin: 0;
+
+    @media (max-width: $medium) {
+      right: 25%;
+    }
+    
+    @media (max-width: $small) {
+      right: 50%; 
+      width: 60%;
+    }
 
     li {
       float: left;
@@ -42,6 +56,14 @@ body {
 
 #navbar-logo {
   position: absolute;
+  font-weight: bold;
+
+  @media (max-width: $small) {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0.8em;
+  }
 }
 
 a {
@@ -53,6 +75,13 @@ a {
 }
 
 .background-image {
+  display: block;
   width: 100vw;
   height: auto;
+
+  @media (max-width: $small) {
+    padding-top: 45px;
+    width: 95vw;
+    margin: 0 auto;
+  }
 }
