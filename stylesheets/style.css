@@ -64,4 +64,9 @@ a {
       width: 95vw;
       margin: 0 auto; } }
 
+.page {
+  width: 100%;
+  height: auto;
+  display: block; }
+
 /*# sourceMappingURL=style.css.map */
