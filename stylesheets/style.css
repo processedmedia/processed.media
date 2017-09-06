@@ -37,7 +37,10 @@ body {
     text-decoration: none; }
 
 .navbar-item {
-  width: 33.333%; }
+  box-sizing: border-box;
+  width: 33.333%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.25em 0.125em; }
 
 #navbar-logo {
   position: absolute;
