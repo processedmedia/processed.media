@@ -78,7 +78,8 @@ a {
       margin: 0 auto; } }
 
 .page {
-  padding: 8em; }
+  padding: 10em;
+  text-align: center; }
   @media (max-width: 600px) {
     .page {
       padding: 1em; } }
@@ -91,10 +92,13 @@ p {
   font-style: italic; }
 
 .image {
-  width: 100%;
+  max-width: 100%;
+  max-height: 90vh;
+  width: auto;
   height: auto;
   display: block;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  margin: 0 auto; }
 
 .definition {
   width: 75%; }
