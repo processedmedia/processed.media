@@ -79,7 +79,9 @@ a {
 
 .page {
   padding: 10em;
-  text-align: center; }
+  text-align: center;
+  background-color: white;
+  color: black; }
   @media (max-width: 600px) {
     .page {
       padding: 1em; } }
