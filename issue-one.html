@@ -11,23 +11,84 @@
 <body>
   <nav id="navbar">
     <a href="/" id="navbar-logo">Processed Media</a>
-    <ul>
-      <li class="navbar-item"><a href="/">Issues</a></li>
-      <li class="navbar-item"><a href="/">Print</a></li>
-      <li class="navbar-item"><a href="/">About</a></li>
-    </ul>
   </nav>
+  <div class="container">
+    <div class="italic">
+      <h1>001: Shade</h1>
+    </div>
+  </div>
+  <img class="cover-image" src="images/issue-one/cover.jpg">
+  <div class="container">
+    <div class="italic">
+      <p>Processed Media</p>
+      <p>Created by Jonathan Brown &amp; Michael Yang.</p>
+      <p>Edited by Nico Silver &amp; Tomas Spiers.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="italic definition">
+      <p>shade</p>
+      <p>/SHād/</p>
+      <br>
+      <p>
+        noun.
+      </p>
+      <ol>
+        <li>comparative darkness and coolness caused by shelter from direct sunlight.</li>
+        <li>a color, especially with regard to how light or dark it is or as distinguished from one nearly like it.</li>
+      </ol>
+      <p>
+        verb.
+      </p>
+      <ol>
+        <li>screen from direct light.</li>
+      </ol>
+      <p>
+        slang.
+      </p>
+      <ol>
+        <li>a light comment with slight disrespect toward an individual</li>
+      </ol>
+    </div>
+  </div>
+
 
   <script>
   window.onload = function() {
     var pageElement
-    var pages = 3
+    var pages = 29
     var i = 0
 
     var descriptions = [
       ['Jonathan Brown', 'EF Building', 'Boston, MA'],
       ['Jonathan Brown', 'Post Hillary Rally', 'University of Pittsburgh', 'Oakland, PA'],
-      ['Tomas Spiers', 'CGIS North, Knafel Building', 'Cambridge, MA']
+      ['Tomas Spiers', 'CGIS North, Knafel Building', 'Cambridge, MA'],
+      ['Jonathan Brown', 'Horn Pond', 'Woburn, MA'],
+      ['Jonathan Brown', 'Charles/MGH', 'Boston, MA'],
+      ['Jonathan Brown', 'Zakim Bridge', 'Boston, MA'],
+      ['Nico Silver', 'Chile'],
+      ['Jonathan Brown', 'Fulton Center', 'New York City, NY'],
+      ['Jonathan Brown', 'Home'],
+      ['Jonathan Brown', 'MFA', 'Boston, MA'],
+      ['Nico Silver', 'Duomo di Milano', 'Italy'],
+      ['Jonathan Brown', 'John Hancock', 'Boston, MA'],
+      ['Jonathan Brown', 'Charles/MGH', 'Boston, MA'],
+      ['Nico Silver', 'Charles/MGH', 'Boston, MA'],
+      ['Nico Silver', 'null'],
+      ['Jonathan Brown', 'Chinatown', 'Boston, MA', '35mm Ilford HP5+'],
+      ['Jonathan Brown', 'Horn Pond', 'Woburn, MA'],
+      ['Jonathan Brown', 'Mr Smalls Theatre & Funhouse', 'Millvale, PA'],
+      ['Jonathan Brown', 'Winning Pond', 'Billerica, MA'],
+      ['Jonathan Brown', 'Winning Pond', 'Billerica, MA'],
+      ['Jonathan Brown', 'Pittsburgh, PA'],
+      ['Jonathan Brown', 'Sunset', 'Somewhere, AR'],
+      ['Jonathan Brown', 'Mr Smalls Theatre & Funhouse', 'Millvale, PA'],
+      ['Jonathan Brown', 'Planet Self Storage', 'Boston, MA'],
+      ['Nico Silver', 'Up', 'Boston, MA'],
+      ['Jonathan Brown', 'MIT', 'Cambridge, MA'],
+      ['Jonathan Brown', 'Northeastern University', 'Boston, MA'],
+      ['Jonathan Brown', 'MIT', 'Cambridge, MA'],
+      ['Jonathan Brown', 'MIT', 'Cambridge, MA']
     ]
 
     for (; i < pages; i++) {
@@ -51,6 +112,8 @@
 
   function createPage(src, description) {
     var base = document.createElement('div')
+    base.className = 'page'
+
     var i = 0
     var p
 

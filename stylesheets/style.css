@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Overpass:200,700");
 body {
   width: 100%;
-  min-height: 125vh;
+  min-height: 100vh;
   margin: 0;
   background-color: black;
   font-family: 'Overpass';
@@ -36,11 +36,14 @@ body {
     text-transform: uppercase;
     text-decoration: none; }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
 .navbar-item {
-  box-sizing: border-box;
-  width: 33.333%;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 0.25em 0.125em; }
+  width: 33.333%; }
 
 #navbar-logo {
   position: absolute;
@@ -57,19 +60,47 @@ a {
   a a:visited {
     color: white; }
 
-.background-image {
+.call-to-action {
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3em; }
+
+.cover-image {
   display: block;
   width: 100vw;
-  height: auto; }
+  height: auto;
+  padding-bottom: 45px; }
   @media (max-width: 600px) {
-    .background-image {
+    .cover-image {
       padding-top: 45px;
       width: 95vw;
       margin: 0 auto; } }
 
 .page {
+  padding: 8em; }
+  @media (max-width: 600px) {
+    .page {
+      padding: 1em; } }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+.italic {
+  font-style: italic; }
+
+.image {
   width: 100%;
   height: auto;
-  display: block; }
+  display: block;
+  padding-bottom: 1em; }
+
+.definition {
+  width: 75%; }
+  .definition ol {
+    padding-top: 0;
+    padding-left: 1.6em;
+    margin-top: 0; }
 
 /*# sourceMappingURL=style.css.map */
