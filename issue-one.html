@@ -20,12 +20,53 @@
 
   <script>
   window.onload = function() {
-    for (let i = 0; i < 22; i++) {
-      let pg = document.createElement('img')
-      pg.src = 'images/issue-one/page' + i.toString() + '.jpg'
-      pg.className = 'page'
-      document.body.appendChild(pg)
+    var pageElement
+    var pages = 3
+    var i = 0
+
+    var descriptions = [
+      ['Jonathan Brown', 'EF Building', 'Boston, MA'],
+      ['Jonathan Brown', 'Post Hillary Rally', 'University of Pittsburgh', 'Oakland, PA'],
+      ['Tomas Spiers', 'CGIS North, Knafel Building', 'Cambridge, MA']
+    ]
+
+    for (; i < pages; i++) {
+      pageElement = createPage(getSource(i), descriptions[i])
+      document.body.appendChild(pageElement)
     }
+  }
+
+  function getSource(num) {
+    var numString = num.toString()
+
+    if (num < 10) {
+      numString = '00' + numString
+    }
+    else if (num < 100) {
+      numString = '0' + numString
+    }
+
+    return 'images/issue-one/' + numString + '.jpg'
+  }
+
+  function createPage(src, description) {
+    var base = document.createElement('div')
+    var i = 0
+    var p
+
+    var img = document.createElement('img')
+    img.className = 'image'
+    img.src = src
+
+    base.appendChild(img)
+
+    for (; i < description.length; i++) {
+      p = document.createElement('p')
+      p.innerHTML = description[i]
+      base.appendChild(p)
+    }
+
+    return base
   }
   </script>
 </body>
